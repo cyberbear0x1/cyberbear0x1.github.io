@@ -4,7 +4,6 @@ title: "ABC Conference CyberHackathon CTF Write-Up"
 date: 2021-08-28
 tags: Web
 author: Cyber Bear
-avatar: /assets/img/common/bestprofile2.jpeg
 category: CTF
 ---
 

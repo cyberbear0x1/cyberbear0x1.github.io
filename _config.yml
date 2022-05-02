@@ -23,7 +23,7 @@ timezone:
 
 title: CyberBearWrites                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: The hacker next door   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
@@ -35,7 +35,7 @@ github:
   username: cyberbearwrites             # change to your github username
 
 twitter:
-  username: 0xcyberbear            # change to your twitter username
+  username: cyberbear0x1            # change to your twitter username
 
 social:
   # Change to your full name.
@@ -44,7 +44,7 @@ social:
   email: ema72cyberl0rd@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
+    - https://twitter.com/cyberbear0x1      # change to your twitter homepage
     - https://github.com/username       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
