@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ABC Conference CyberHackathon CTF Write-Up(EASY PEASY)"
+title: "ABC Conference CyberHackathon CTF Write-Up"
 date: 2021-08-28
 tags: Web
 author: Cyber Bear
@@ -10,7 +10,7 @@ category: CTF
 
 
 ## Dear Reader,
-Today, you are going  be reading how my team and I solved most of **The ABC's Conference CyberHackathon** web-based challenges.  
+Today, you are going  be reading how my team and I solved the **The American Business Council Cyber-Hackathon**  Easy Peasy web-based challenge.  
 
 [Link](http://abc.ctf.ng/)  
 
