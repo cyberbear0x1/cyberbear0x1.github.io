@@ -23,7 +23,7 @@ timezone:
 
 title: CyberBearWrites                          # the main title
 
-tagline: The hacker next door   # it will display as the sub-title
+tagline: Cool things don’t have to be complicated  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
