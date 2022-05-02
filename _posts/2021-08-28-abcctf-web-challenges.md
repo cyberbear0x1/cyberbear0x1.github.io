@@ -5,6 +5,7 @@ date: 2021-08-28
 tags: Web
 author: Cyber Bear
 category: CTF
+pin: true
 ---
 
 
@@ -39,7 +40,7 @@ Although this information was irrelvant to solving this challenge, it is good pr
 
 While running quick tests on the vulnerabilities I highlighted previously, I ran [FFUF](https://github.com/ffuf/ffuf) in the backround. [FFUF](https://github.com/ffuf/ffuf) is a Fast Web Fuzzer written in go.
 
-```
+```bash
 ffuf -u "http://185.203.119.50:4200/FUZZ" -w ~/wordlist/common.txt
 ```
 From the result below, all other directories returned either status codes **403,** **200,** **301** or **404.**
@@ -50,7 +51,7 @@ Of all other status codes, The directory with the status code **301** i.e **/dev
 
 From experience, I decided to run a recursive scan on that directory using FFUF again!
 
-```
+```bash
 ffuf -u "http://185.203.119.50:4200/dev/FUZZ" -w ~/wordlist/common.txt
 ```
 
@@ -83,7 +84,7 @@ Now we have this text, How do we use it, well we have a hint.
 
 Let's use FFUF to find files with the **.php** extention.  
 
-```
+```bash
 ffuf -u "http://185.203.119.50:4200/dev/FUZZ" -w ~/wordlist/common.txt -e .php
 ```
 
@@ -103,13 +104,13 @@ After waiting a few seconds for some sort of grand reveal of the FLAG, it dawned
 
 Viewing the page source code we attempted to download the image on the web page and decided to view the EXIF data of the image using Exiftool.
 
-```
+```bash
 wget http://185.203.119.50:4200/AboutToWin.jpg
 ```
 
 Afterwards running the Exiftool:
 
-```
+```bash
 exiftool AboutToWin.jpg
 ```
 
@@ -117,7 +118,7 @@ We found this:
 
 ![exif](/assets/abcctf/web/Screenshot_2021-08-29_16-57-16.png)
 
-Looks like an html file? Then it is an html file;  
+Looks like an html file? let's take a look at it;  
 
 This must be it.....  
 
