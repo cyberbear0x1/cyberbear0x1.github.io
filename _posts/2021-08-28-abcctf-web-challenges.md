@@ -12,7 +12,6 @@ pin: true
 ## Dear Reader,
 Today, you are going  be reading how my team and I solved the **The American Business Council Cyber-Hackathon**  Easy Peasy web-based challenge.  
 
-[Link](http://abc.ctf.ng/)  
 
 ___
 
@@ -23,7 +22,7 @@ On clicking the link provided for the challenge, A Login Page is displayed.
 
 ![Challenge-Login-Page](/assets/abcctf/web/Screenshot_2021-08-29_14-52-37.png)
 
-Naturally, seeing a login page in a CTF, three things came to mind SQL Injection, Bruteforcing for default credentials and  IDOR(Insecure Direct Object Reference).
+Naturally, seeing a login page in a CTF, three things came to mind at first SQL Injection, Bruteforcing for default credentials and IDOR(Insecure Direct Object Reference) vulnerabilities.
 
 But Firstly before delving into all the good stuff, I needed to gather surface level knowlege on what this website runs on. To do this I use the [Whatweb tool](https://installlion.com/kali/kali/main/w/whatweb/install/index.html) preinstalled in Kali Linux.
 
@@ -36,7 +35,8 @@ Now I know:
 
 Although this information was irrelvant to solving this challenge, it is good practice to always enumerate as much as possible because:
 
-> Enumeration is the most critical part of all. The art, the difficulty, and the goal are not to gain access to our target computer. Instead, it is identifying all of the ways we could attack a target we must find.  
+> Enumeration is the most critical part of all. The art, the difficulty, and the goal are not to gain access to our target computer. Instead, it is identifying all of the ways we could attack a target we must find.
+{: .prompt-tip }  
 
 While running quick tests on the vulnerabilities I highlighted previously, I ran [FFUF](https://github.com/ffuf/ffuf) in the backround. [FFUF](https://github.com/ffuf/ffuf) is a Fast Web Fuzzer written in go.
 
@@ -81,7 +81,7 @@ Quickly converting this to it's ASCII eqivalent, we get:
 Now we have this text, How do we use it, well we have a hint.  
 
 > By the way, we have created a nice **login page** in **PHP.** Go find it out
-
+{: .prompt-tip }
 Let's use FFUF to find files with the **.php** extention.  
 
 ```bash
